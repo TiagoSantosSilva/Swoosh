@@ -194,6 +194,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="BCh-Kq-gGq" eventType="touchUpInside" id="8aW-yn-C7p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,6 +221,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zy5-J7-LbZ"/>
                     </view>
+                    <connections>
+                        <segue destination="diz-jU-Zwt" kind="show" identifier="SkillViewControllerSegue" id="tQh-GF-8Kv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fT1-tF-ZKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aq2-VA-m7p" userLabel="Exit" sceneMemberID="exit"/>
