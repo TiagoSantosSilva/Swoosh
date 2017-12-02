@@ -148,6 +148,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="BCh-Kq-gGq" eventType="touchUpInside" id="mZ8-6Q-bKY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-5o-Czs" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="89.999999999999972" width="345" height="50"/>
@@ -159,6 +162,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="BCh-Kq-gGq" eventType="touchUpInside" id="atY-zz-BLe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-3P-wVj" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="179.99999999999997" width="345" height="50"/>
@@ -170,6 +176,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="BCh-Kq-gGq" eventType="touchUpInside" id="6Ja-42-JCR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -222,6 +231,7 @@
                         <viewLayoutGuide key="safeArea" id="zy5-J7-LbZ"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="YbH-fk-DvM" id="UrI-sy-g0d"/>
                         <segue destination="diz-jU-Zwt" kind="show" identifier="SkillViewControllerSegue" id="tQh-GF-8Kv"/>
                     </connections>
                 </viewController>
