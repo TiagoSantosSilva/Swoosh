@@ -24,15 +24,37 @@ class SkillViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func finishButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Alert Title Here 🧐", message: "This is the message of the alert that will be shown.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Default", style: UIAlertActionStyle.default, handler: printClickedAction))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: printClickedAction))
+        alert.addAction(UIAlertAction(title: "Launch the Missile", style: UIAlertActionStyle.destructive, handler: printClickedAction))
+        let greenAlert = UIAlertAction(title: "Green!", style: UIAlertActionStyle.default, handler: printClickedAction)
+        greenAlert.setValue(UIColor.green, forKey: "titleTextColor")
+        
+        let darkGrayAlert = UIAlertAction(title: "Dark Gray!", style: UIAlertActionStyle.default, handler: printClickedAction)
+        darkGrayAlert.setValue(UIColor.darkGray, forKey: "titleTextColor")
+        
+        let brownAlert = UIAlertAction(title: "Brown!", style: UIAlertActionStyle.default, handler: printClickedAction)
+        brownAlert.setValue(UIColor.brown, forKey: "titleTextColor")
+        
+        alert.addAction(greenAlert)
+        alert.addAction(darkGrayAlert)
+        alert.addAction(brownAlert)
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
-    */
-
+    
+    func printClickedAction(alertAction: UIAlertAction){
+        guard let alertActionTitle = alertAction.title else { return }
+        print(alertActionTitle)
+        
+        if alertAction.title == "Green!" {
+            print("Green button was tapped 😆")
+        }
+    }
 }

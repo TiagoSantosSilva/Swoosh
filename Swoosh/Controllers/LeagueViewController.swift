@@ -19,6 +19,10 @@ class LeagueViewController: UIViewController {
         player = Player()
         nextButton.isEnabled = false
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,5 +53,10 @@ class LeagueViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let skillViewController = segue.destination as? SkillViewController else { return }
         skillViewController.player = player
+    }
+    
+    @IBAction func unwindFromSkillViewController(unwindSegue: UIStoryboardSegue) {
+        // create the alert
+        
     }
 }

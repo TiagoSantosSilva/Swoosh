@@ -190,7 +190,7 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="aq2-VA-m7p" kind="unwind" unwindAction="unwindFromSkillViewControllerWithUnwindSegue:" id="1Hd-5P-STc"/>
+                                    <segue destination="aq2-VA-m7p" kind="unwind" unwindAction="unwindFromLeagueViewControllerWithUnwindSegue:" id="1Hd-5P-STc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbH-fk-DvM" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
@@ -251,6 +251,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="57f-gy-fWG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyN-DR-GVO">
+                                <rect key="frame" x="10" y="10" width="29" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="3xT-A1-eiP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="29" id="9n5-Wj-eOy"/>
+                                    <constraint firstAttribute="width" constant="29" id="m06-zj-48A"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="Edy-W2-qT8" kind="unwind" unwindAction="unwindFromSkillViewControllerWithUnwindSegue:" id="beJ-7R-J7c"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-rF-tzw">
                                 <rect key="frame" x="15" y="208.33333333333337" width="345" height="50.000000000000028"/>
                                 <subviews>
@@ -305,6 +317,9 @@
                                 <state key="normal" title="FINISH">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishButtonTapped:" destination="diz-jU-Zwt" eventType="touchUpInside" id="Hln-L5-QtG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -316,6 +331,8 @@
                             <constraint firstItem="ERx-OT-UoZ" firstAttribute="top" secondItem="clb-L7-g9l" secondAttribute="top" constant="20" id="BzU-0g-s1V"/>
                             <constraint firstItem="57f-gy-fWG" firstAttribute="leading" secondItem="clb-L7-g9l" secondAttribute="leading" id="GlP-uv-AMu"/>
                             <constraint firstItem="I7x-rF-tzw" firstAttribute="leading" secondItem="clb-L7-g9l" secondAttribute="leading" constant="15" id="ImI-Ag-ndb"/>
+                            <constraint firstItem="yyN-DR-GVO" firstAttribute="top" secondItem="icS-gS-dGl" secondAttribute="top" constant="10" id="J1o-4W-irZ"/>
+                            <constraint firstItem="yyN-DR-GVO" firstAttribute="leading" secondItem="icS-gS-dGl" secondAttribute="leading" constant="10" id="MnQ-Ya-awv"/>
                             <constraint firstItem="57f-gy-fWG" firstAttribute="top" secondItem="icS-gS-dGl" secondAttribute="top" id="SWg-jT-rbD"/>
                             <constraint firstItem="clb-L7-g9l" firstAttribute="bottom" secondItem="vuu-rU-N3b" secondAttribute="bottom" constant="34" id="d7m-KZ-8lg"/>
                             <constraint firstItem="ERx-OT-UoZ" firstAttribute="leading" secondItem="clb-L7-g9l" secondAttribute="leading" constant="15" id="jh8-Ua-Joc"/>
@@ -327,6 +344,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOM-js-5Dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Edy-W2-qT8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1976.8" y="118.22660098522168"/>
         </scene>
