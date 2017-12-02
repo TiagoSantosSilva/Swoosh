@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="88.799999999999997" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--League View Controller-->
         <scene sceneID="2Xs-iS-Ur8">
             <objects>
-                <viewController id="BCh-Kq-gGq" sceneMemberID="viewController">
+                <viewController id="BCh-Kq-gGq" customClass="LeagueViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YE7-iQ-GeC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,10 +224,10 @@
             </objects>
             <point key="canvasLocation" x="1026.4000000000001" y="116.74876847290641"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill View Controller-->
         <scene sceneID="3ao-k5-t2f">
             <objects>
-                <viewController id="diz-jU-Zwt" sceneMemberID="viewController">
+                <viewController id="diz-jU-Zwt" customClass="SkillViewController" customModule="Swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="icS-gS-dGl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

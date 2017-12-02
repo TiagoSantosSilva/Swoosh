@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeViewController.swift
 //  Swoosh
 //
 //  Created by Tiago Santos on 01/12/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var swoosh: UIImageView!
     @IBOutlet weak var backgroundImage: UIImageView!
