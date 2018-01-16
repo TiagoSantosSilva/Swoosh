@@ -23,10 +23,15 @@ class SkillViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     @IBAction func finishButtonTapped(_ sender: Any) {
-        let alert = UIAlertController(title: "Alert Title Here 🧐", message: "This is the message of the alert that will be shown.", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Alert Title Here", message: "This is the message of the alert that will be shown.", preferredStyle: UIAlertControllerStyle.alert)
         
         // add the actions (buttons)
         alert.addAction(UIAlertAction(title: "Default", style: UIAlertActionStyle.default, handler: printClickedAction))
@@ -54,7 +59,7 @@ class SkillViewController: UIViewController {
         print(alertActionTitle)
         
         if alertAction.title == "Green!" {
-            print("Green button was tapped 😆")
+            print("Green button was tapped")
         }
     }
 }
